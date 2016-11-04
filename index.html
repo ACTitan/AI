@@ -11,7 +11,37 @@
      <link href= "main.css" rel= "stylsheet">
 </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <h1>AI</h1>
+
+<p> di algo a AI</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Dilo</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+
+
 
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
